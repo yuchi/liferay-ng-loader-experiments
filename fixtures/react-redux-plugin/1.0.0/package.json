@@ -1,0 +1,7 @@
+{
+    "name": "react-redux-plugin",
+    "version": "1.0.0",
+    "peerDependencies": {
+        "react-redux": "*"
+    }
+}
