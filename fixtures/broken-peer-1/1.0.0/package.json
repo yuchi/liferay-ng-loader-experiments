@@ -1,0 +1,7 @@
+{
+    "name": "broken-peer-1",
+    "version": "1.0.0",
+    "peerDependencies": {
+        "broken-peer-2": "*"
+    }
+}

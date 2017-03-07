@@ -1,10 +1,19 @@
 {
-  "name": "liferay-ng-loader-experiments",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "Proprietary",
-  "dependencies": {
-    "glob": "^7.1.1",
-    "semver": "^5.3.0"
-  }
+    "name": "liferay-ng-loader-experiments",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "Proprietary",
+    "scripts": {
+        "test": "jest"
+    },
+    "dependencies": {
+        "glob": "^7.1.1",
+        "semver": "^5.3.0"
+    },
+    "devDependencies": {
+        "jest": "^19.0.2"
+    },
+    "jest": {
+        "modulePathIgnorePatterns": [ "<rootDir>/fixtures/" ]
+    }
 }

@@ -4,7 +4,7 @@
     "dependencies": {
         "react": "^16.0.0",
         "redux": "^2.0.0",
-        "react-redux": "*",
-        "react-redux-plugin": "*"
+        "react-redux-plugin": "*",
+        "react-redux": "*"
     }
 }

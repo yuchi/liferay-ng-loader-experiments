@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should throw with circular peerDependencies 1`] = `"Probable circular references in peerDependencies. Unqualified peers are 'broken-peer-1@1.0.0', 'broken-peer-2@1.0.0'"`;

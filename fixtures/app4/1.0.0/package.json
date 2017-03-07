@@ -1,0 +1,8 @@
+{
+    "name": "app4",
+    "version": "1.0.0",
+    "dependencies": {
+        "broken-peer-1": "*",
+        "broken-peer-2": "*"
+    }
+}
