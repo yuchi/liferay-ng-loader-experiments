@@ -1,3 +1,53 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Should throw with circular peerDependencies 1`] = `"Probable circular references in peerDependencies. Unqualified peers are 'broken-peer-1@1.0.0', 'broken-peer-2@1.0.0'"`;
+
+exports[`Should work 1`] = `
+Object {
+  "rr": Object {
+    "react": "react @ 15.0.0",
+    "redux": "redux @ 2.0.0",
+    "stamp": "cmVhY3QtcmVkdXhANS4wLjB7cmVhY3RAMTUuMC4we30scmVkdXhAMi4wLjB9L2luZGV4Lmpz",
+  },
+}
+`;
+
+exports[`Should work 2`] = `
+Object {
+  "react": "react @ 16.0.0",
+  "react-redux": Object {
+    "react": "react @ 16.0.0",
+    "redux": "redux @ 3.0.0",
+    "stamp": "cmVhY3QtcmVkdXhANS4wLjB7cmVhY3RAMTYuMC4we30scmVkdXhAMy4wLjB9L2luZGV4Lmpz",
+  },
+  "react-redux-plugin": Object {
+    "react-redux": Object {
+      "react": "react @ 16.0.0",
+      "redux": "redux @ 3.0.0",
+      "stamp": "cmVhY3QtcmVkdXhANS4wLjB7cmVhY3RAMTYuMC4we30scmVkdXhAMy4wLjB9L2luZGV4Lmpz",
+    },
+  },
+  "redux": "redux @ 3.0.0",
+}
+`;
+
+exports[`Should work 3`] = `
+Object {
+  "react": "react @ 16.0.0",
+  "react-redux": Object {
+    "react": "react @ 16.0.0",
+    "redux": "redux @ 2.0.0",
+    "stamp": "cmVhY3QtcmVkdXhANS4wLjB7cmVhY3RAMTYuMC4we30scmVkdXhAMi4wLjB9L2luZGV4Lmpz",
+  },
+  "react-redux-plugin-deep": Object {
+    "react-redux-plugin": Object {
+      "react-redux": Object {
+        "react": "react @ 16.0.0",
+        "redux": "redux @ 2.0.0",
+        "stamp": "cmVhY3QtcmVkdXhANS4wLjB7cmVhY3RAMTYuMC4we30scmVkdXhAMi4wLjB9L2luZGV4Lmpz",
+      },
+    },
+  },
+  "redux": "redux @ 2.0.0",
+}
+`;
